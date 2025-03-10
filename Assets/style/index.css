@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+h1 {
+  font-family: Inter;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+header .title-1 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .title-1 h1 {
+  color: rgb(241, 241, 241);
+  margin: 20px auto;
+  padding: 0% 30% 0% 30%;
+  text-align: center;
+}
+header .title-1 p {
+  margin: 20px auto;
+  color: rgb(241, 241, 241);
+  font-family: MerriweatherLight;
+  font-style: italic;
+}
+header .title-1 li {
+  color: rgb(241, 241, 241);
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 33px;
+  padding: 17px 20px;
+  margin: 50px auto;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.3490196078);
+  display: grid;
+  grid-template-areas: "left right";
+  margin: 0% 15% 0% 15%;
+}
+nav .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  grid-area: "left";
+}
+nav .nav-left ul:hover {
+  background: #eeecec;
+}
+nav .nav-left ul:hover li:hover {
+  color: #0f0f0f;
+  text-shadow: none;
+}
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  grid-area: "right";
+}
+nav li {
+  font-family: inter;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fdfcfc;
+  text-shadow: 0px 0px 3px #0f0f0f;
+  padding: 20px 20px 20px;
+}
+nav a {
+  color: #fdfcfc;
+}
+
+body {
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+body .sub-title {
+  background: rgb(241, 241, 241);
+  margin: 0% 15% 5% 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .sub-title .sub-title-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+body .sub-title .sub-title-2 h2 {
+  font-family: inter;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0px 120px;
+  margin: 20px auto;
+}
+body .sub-title .sub-title-2 p {
+  font-family: MerriweatherLight;
+  font-style: italic;
+  padding: 0px 120px;
+  margin: 20px auto;
+  line-height: 150%;
+}/*# sourceMappingURL=index.css.map */

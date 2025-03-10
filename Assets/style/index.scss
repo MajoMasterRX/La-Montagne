@@ -1,0 +1,152 @@
+
+// ********************************Police*************************************
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+// *********************************Paramètre************************
+
+$white: rgb(241, 241, 241);
+$black: rgb(23, 23, 23);
+
+@mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerChild2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+h1 {
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+// ********************* Header*************************
+
+header{
+    .title-1{
+
+        height: 100vh;
+        @include centerChild2;
+        h1{
+            color: $white;
+            margin: 20px auto;
+            padding: 0% 30% 0% 30%;
+            text-align: center;
+        }
+        p{
+            margin: 20px auto;
+            color: $white;
+            font-family: MerriweatherLight;
+            font-style: italic;
+        
+        }
+
+        li{
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 33px;
+            padding: 17px 20px;
+            margin: 50px auto;
+        }
+    }
+}
+
+nav{ 
+    background: #ffffff59;
+    display: grid;
+    grid-template-areas: "left right";
+    margin: 0% 15% 0% 15%;
+    .nav-left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        grid-area: "left";
+        ul:hover{
+            background: #eeecec;
+            li:hover{
+                color: #0f0f0f;
+                text-shadow: none;
+            }
+        }
+    }
+    .nav-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        grid-area: "right";
+    }
+        li{
+            font-family: inter;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #fdfcfc;
+            text-shadow:0px 0px 3px #0f0f0f;
+            padding: 20px 20px 20px;
+        } 
+
+        a{
+            color: #fdfcfc;
+        }
+}
+
+// *************************** Body *****************************
+
+body {
+background: url(../img/bg.jpg) center/cover fixed;
+.sub-title{
+    background: $white;
+    margin: 0% 15% 5% 15%;
+    @include centerChild;
+    flex-direction: column;
+    .sub-title-2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+margin: 50px;
+
+h2{
+    font-family: inter;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px 120px;
+    margin: 20px auto;
+}
+
+p{
+    font-family: MerriweatherLight;
+    font-style: italic;
+    padding: 0px 120px;
+    margin: 20px auto;
+    line-height: 150%;
+}
+
+}
+
+}
+
+}
